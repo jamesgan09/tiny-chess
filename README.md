@@ -10,4 +10,8 @@ A tiny chess engine for the [tiny-chess-01](https://make.fun/c/tiny-chess-01) bo
 
 Run it with `MAKEFUN_ENV_URL` set to the env server, e.g. `MAKEFUN_ENV_URL=http://localhost:8080 python3 main.py`.
 
+## Trials
+
+Practice gauntlet (6 games vs the house anchors, 75,000 nodes/move, ~3 s/move): 1 win, 3 draws, 2 losses — about 1,191 Elo, above the 1,154 final-qualification floor. A bishop-pair variant tied it, and a 100,000-node budget lost 5 games on time, so the committed engine is the 75k control. Perft is clean on all standard positions, and the packed entry is 4,081 bytes (repo snapshot 6,069 bytes, both inside the caps).
+
 MIT licensed.
